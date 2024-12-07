@@ -44,6 +44,7 @@ class MazeGame:
         self.visited = set()  # 探索済みマスを記録
         self.move_history = []  # 移動履歴
         self.start_time_ms = int(time.time() * 1000)  # 記録開始時間（エポックミリ秒）
+        self.total_cost = 0  # 総コストの初期化
         self.mark_explored()
 
         # フォントの初期化
@@ -122,6 +123,11 @@ class MazeGame:
             current_time_ms = int(time.time() * 1000)
             self.move_history.append((direction, current_time_ms))
 
+            # 移動コストを加算
+            cost = int(self.maze[nx][ny]) if self.maze[nx][ny].isdigit() else 0
+            self.total_cost += cost
+            print(f"Moved {direction}. Cost: {cost}, Total Cost: {self.total_cost}")
+
             # プレイヤーを移動
             self.player_position = new_position
             self.mark_explored()
@@ -199,6 +205,7 @@ class MazeGame:
             # ゴール達成のチェック
             if self.is_goal_reached():
                 print("Congratulations! You've completed the maze.")
+                print(f"Total Cost: {self.total_cost}")
                 self.save_history('move_history.txt')
                 running = False
 

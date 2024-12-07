@@ -24,6 +24,7 @@ class MazeReplay:
         self.load_replay(replay_file)
         self.player_position = self.start
         self.visited = set()  # 探索済みのマスを記録
+        self.total_cost = 0  # 総コストの初期化
         self.mark_explored()
 
         # フォントを初期化
@@ -84,6 +85,11 @@ class MazeReplay:
 
         nx, ny = new_position
         if 0 <= nx < self.rows and 0 <= ny < self.cols and self.maze[nx][ny] != '#':
+            # 移動コストを加算
+            cost = int(self.maze[nx][ny]) if self.maze[nx][ny].isdigit() else 0
+            self.total_cost += cost
+            print(f"Moved {direction}. Cost: {cost}, Total Cost: {self.total_cost}")
+
             self.player_position = new_position
             self.mark_explored()
 
@@ -116,10 +122,16 @@ class MazeReplay:
                     text_rect = text.get_rect(center=(x + TILE_SIZE // 2, y + TILE_SIZE // 2))
                     screen.blit(text, text_rect)
 
+    def draw_cost(self, screen, screen_height):
+        """総コストを画面上に描画"""
+        pygame.draw.rect(screen, BLACK, (0, screen_height - 40, screen.get_width(), 40))  # コスト表示用の背景
+        cost_text = self.font.render(f"Total Cost: {self.total_cost}", True, WHITE)
+        screen.blit(cost_text, (10, screen_height- 30))  # 画面下に表示
+
     def replay(self):
         """リプレイを再現"""
         screen_width = self.cols * TILE_SIZE
-        screen_height = self.rows * TILE_SIZE
+        screen_height = self.rows * TILE_SIZE + 40
         screen = pygame.display.set_mode((screen_width, screen_height))
         pygame.display.set_caption("Maze Replay")
 
@@ -140,6 +152,7 @@ class MazeReplay:
             # 描画
             screen.fill(BLACK)
             self.draw_maze(screen)
+            self.draw_cost(screen, screen_height)
             pygame.display.flip()
 
             # 指定された時間だけ待機
