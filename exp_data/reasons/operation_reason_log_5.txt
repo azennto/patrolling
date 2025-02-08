@@ -1,0 +1,126 @@
+Direction: right
+Timestamp(ms): 1737701621422
+WaitTime(s): 9.378
+Coordinates: (2,9)
+Operation: 覚えていない
+Reason: 
+-------
+Direction: up
+Timestamp(ms): 1737701622961
+WaitTime(s): 1.539
+Coordinates: (2,10)
+Operation: 上取って下へ
+Reason: 一番上の行は取らなくても良さそうだったので、いったん移動してから下の格子状の部分へ
+-------
+Direction: down
+Timestamp(ms): 1737701628998
+WaitTime(s): 5.197
+Coordinates: (2,10)
+Operation: 下へ
+Reason: 格子状の部分行きたかった
+-------
+Direction: down
+Timestamp(ms): 1737701631679
+WaitTime(s): 2.378
+Coordinates: (4,10)
+Operation: 下
+Reason: 
+-------
+Direction: down
+Timestamp(ms): 1737701632284
+WaitTime(s): 0.605
+Coordinates: (5,10)
+Operation: 下
+Reason: 
+-------
+Direction: right
+Timestamp(ms): 1737701633519
+WaitTime(s): 1.235
+Coordinates: (6,10)
+Operation: 右行って8の列取る
+Reason: 一番安く右の8の列を取れそうだったから
+-------
+Direction: left
+Timestamp(ms): 1737701636304
+WaitTime(s): 1.946
+Coordinates: (6,14)
+Operation: 戻って6の列へ
+Reason: 8のまま下に行くのはコスパ悪い
+-------
+Direction: down
+Timestamp(ms): 1737701639445
+WaitTime(s): 2.872
+Coordinates: (6,12)
+Operation: 下へ
+Reason: 未回収の方へ
+-------
+Direction: down
+Timestamp(ms): 1737701640780
+WaitTime(s): 0.934
+Coordinates: (8,12)
+Operation: 下に移動して行を回収
+Reason: 他の列に移動する理由が無い
+-------
+Direction: down
+Timestamp(ms): 1737701644164
+WaitTime(s): 3.384
+Coordinates: (9,12)
+Operation: 下へ
+Reason: 他の行を回収したかった
+-------
+Direction: down
+Timestamp(ms): 1737701646072
+WaitTime(s): 1.908
+Coordinates: (10,12)
+Operation: 下へ
+Reason: 
+-------
+Direction: left
+Timestamp(ms): 1737701651962
+WaitTime(s): 4.884
+Coordinates: (14,12)
+Operation: 9の列から左へ
+Reason: 一番下まで行くと9にあたる
+-------
+Direction: down
+Timestamp(ms): 1737701654784
+WaitTime(s): 2.586
+Coordinates: (14,10)
+Operation: 左下に行く
+Reason: 一番下が取れなかったため
+-------
+Direction: up
+Timestamp(ms): 1737701656326
+WaitTime(s): 1.208
+Coordinates: (16,10)
+Operation: 下に行ってから引き返す
+Reason: 一番下から行く必要が無い
+-------
+Direction: left
+Timestamp(ms): 1737701657633
+WaitTime(s): 1.071
+Coordinates: (14,10)
+Operation: 左へ
+Reason: 未回収の列を取るため
+-------
+Direction: up
+Timestamp(ms): 1737701664635
+WaitTime(s): 6.004
+Coordinates: (14,6)
+Operation: 7の列から上がる
+Reason: 9の行から脱出したかった
+-------
+Direction: left
+Timestamp(ms): 1737701672781
+WaitTime(s): 5.997
+Coordinates: (6,4)
+Operation: 一番右まで行って引き返した
+Reason: 全ての列を回収するため
+-------
+Direction: right
+Timestamp(ms): 1737701683358
+WaitTime(s): 8.899
+Coordinates: (6,2)
+Operation: 6まで行って上がる
+Reason: コスパがいいから
+-------
