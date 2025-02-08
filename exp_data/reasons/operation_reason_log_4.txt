@@ -1,0 +1,70 @@
+Direction: left
+Timestamp(ms): 1737700555277
+WaitTime(s): 7.950
+Coordinates: (0,1)
+Operation: 左に行った
+Reason: 格子状の構造の部分に行きたかったため
+-------
+Direction: right
+Timestamp(ms): 1737700555914
+WaitTime(s): 0.637
+Coordinates: (0,0)
+Operation: 右に行ってから左へ行った
+Reason: 左には行かなさそうだったので
+-------
+Direction: right
+Timestamp(ms): 1737700562935
+WaitTime(s): 4.085
+Coordinates: (4,6)
+Operation: 5で右に行って、6で下に行った
+Reason: 安いルートがこれ
+-------
+Direction: right
+Timestamp(ms): 1737700570184
+WaitTime(s): 6.111
+Coordinates: (6,10)
+Operation: 右に行った
+Reason: 取りつくしたので
+-------
+Direction: up
+Timestamp(ms): 1737700577486
+WaitTime(s): 6.532
+Coordinates: (6,14)
+Operation: 上に行った
+Reason: 上に行かないと888を巡回済みにできなかったので
+-------
+Direction: down
+Timestamp(ms): 1737700578793
+WaitTime(s): 0.636
+Coordinates: (4,16)
+Operation: 下に向かった
+Reason: 下に行って残りを巡回済みにする
+-------
+Direction: left
+Timestamp(ms): 1737700582024
+WaitTime(s): 1.333
+Coordinates: (14,16)
+Operation: 左回りでゴールに行く
+Reason: 戻るよりコストが安い
+-------
+Direction: left
+Timestamp(ms): 1737700583530
+WaitTime(s): 0.670
+Coordinates: (14,12)
+Operation: 左
+Reason: 
+-------
+Direction: left
+Timestamp(ms): 1737700585201
+WaitTime(s): 0.501
+Coordinates: (14,5)
+Operation: 手前の道で上に行った
+Reason: 8の行の方が安いので
+-------
+Direction: up
+Timestamp(ms): 1737700585702
+WaitTime(s): 0.501
+Coordinates: (14,4)
+Operation: 上に行った
+Reason: 
+-------

@@ -1,0 +1,112 @@
+Direction: right
+Timestamp(ms): 1737698781881
+WaitTime(s): 6.341
+Coordinates: (0,1)
+Operation: 右下の方に行った
+Reason: 複合した通りに行きたかったため
+-------
+Direction: down
+Timestamp(ms): 1737698784840
+WaitTime(s): 2.959
+Coordinates: (0,2)
+Operation: 下の方に行った
+Reason: 一周するように移動したいから
+-------
+Direction: down
+Timestamp(ms): 1737698785507
+WaitTime(s): 0.667
+Coordinates: (1,2)
+Operation: 下に行った
+Reason: 下の8で一番右の列を巡回済みにした方が安かったから
+-------
+Direction: down
+Timestamp(ms): 1737698788332
+WaitTime(s): 2.186
+Coordinates: (4,2)
+Operation: 下に行った
+Reason: このまま右に行くか迷ったが、下から回る方を優先した
+-------
+Direction: down
+Timestamp(ms): 1737698792766
+WaitTime(s): 4.199
+Coordinates: (6,2)
+Operation: 下に行った
+Reason: 
+-------
+Direction: down
+Timestamp(ms): 1737698793607
+WaitTime(s): 0.573
+Coordinates: (8,2)
+Operation: 下に行った
+Reason: 一番右を取りたかったため
+-------
+Direction: left
+Timestamp(ms): 1737698795387
+WaitTime(s): 0.567
+Coordinates: (14,2)
+Operation: 左に行った
+Reason: 一番左を取りたかったため
+-------
+Direction: right
+Timestamp(ms): 1737698800162
+WaitTime(s): 3.933
+Coordinates: (14,2)
+Operation: 右側に行った
+Reason: 左は取りつくしたから
+-------
+Direction: right
+Timestamp(ms): 1737698804836
+WaitTime(s): 4.372
+Coordinates: (14,4)
+Operation: 右に行った
+Reason: 一番下の列を通って上に行こうと思ったから
+-------
+Direction: right
+Timestamp(ms): 1737698807898
+WaitTime(s): 3.062
+Coordinates: (14,5)
+Operation: 右に行った
+Reason: 
+-------
+Direction: right
+Timestamp(ms): 1737698816248
+WaitTime(s): 8.350
+Coordinates: (14,6)
+Operation: 右に行った
+Reason: 6を通った方がやすそうだったから
+-------
+Direction: down
+Timestamp(ms): 1737698818802
+WaitTime(s): 2.319
+Coordinates: (14,8)
+Operation: 6で下に移動
+Reason: その方がやすそうだったため
+-------
+Direction: right
+Timestamp(ms): 1737698822402
+WaitTime(s): 3.363
+Coordinates: (16,8)
+Operation: 下に行ってから7から上がった
+Reason: 7から上がらないと巡回できない行があったため
+-------
+Direction: up
+Timestamp(ms): 1737698825796
+WaitTime(s): 3.128
+Coordinates: (16,10)
+Operation: 7から上がった
+Reason: 
+-------
+Direction: up
+Timestamp(ms): 1737698827376
+WaitTime(s): 0.539
+Coordinates: (10,10)
+Operation: 上に上がった
+Reason: 取りつくしたから
+-------
+Direction: right
+Timestamp(ms): 1737698829633
+WaitTime(s): 1.078
+Coordinates: (8,14)
+Operation: 一番右に行ってから上に上がった
+Reason: そうすれば全て巡回しつつゴールに行ける
+-------

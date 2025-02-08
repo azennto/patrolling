@@ -1,0 +1,56 @@
+Direction: up
+Timestamp(ms): 1737699978468
+WaitTime(s): 16.983
+Coordinates: (8,16)
+Operation: 上に行ってから下に下がった
+Reason: 左上に行けるルートは下からしかなかったので、上に上がって一番上の行を探索済みにしてから下に行った
+-------
+Direction: down
+Timestamp(ms): 1737699981444
+WaitTime(s): 1.534
+Coordinates: (0,16)
+Operation: 一番下に行った
+Reason: 左側に行くルートとして一番下に行った方がやすそうだったため
+-------
+Direction: down
+Timestamp(ms): 1737699984619
+WaitTime(s): 1.204
+Coordinates: (10,16)
+Operation: 一番下に行った
+Reason: 
+-------
+Direction: down
+Timestamp(ms): 1737699985457
+WaitTime(s): 0.838
+Coordinates: (11,16)
+Operation: 一番下に行った
+Reason: 
+-------
+Direction: up
+Timestamp(ms): 1737699988375
+WaitTime(s): 0.532
+Coordinates: (16,10)
+Operation: 上に行って6から左に行った
+Reason: そちらの方がやすそうだったため
+-------
+Direction: up
+Timestamp(ms): 1737699989344
+WaitTime(s): 0.969
+Coordinates: (15,10)
+Operation: 上に行った
+Reason: 
+-------
+Direction: up
+Timestamp(ms): 1737699992060
+WaitTime(s): 0.770
+Coordinates: (12,4)
+Operation: 上に上がって9を取りに行った
+Reason: わざわざ行かないと取れない配置だったため
+-------
+Direction: right
+Timestamp(ms): 1737699995584
+WaitTime(s): 0.536
+Coordinates: (0,2)
+Operation: 9を取ってからゴールに行った
+Reason: わざわざ行かないと取れない配置だったため
+-------

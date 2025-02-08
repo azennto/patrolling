@@ -1,0 +1,108 @@
+Direction: down
+Timestamp(ms): 1737091870891
+WaitTime(s): 1.175
+Operation: まっすぐ進んだ
+Reason: 右下の方に行きたかったが、そこに行く道を比較した結果下の5が並んでいるところに行くのが良さそうだったから
+-------
+Direction: right
+Timestamp(ms): 1737091879820
+WaitTime(s): 8.729
+Operation: 下に行った
+Reason: この次の通路に行くかどうか悩んだが、下に行くことにした
+-------
+Direction: right
+Timestamp(ms): 1737091881554
+WaitTime(s): 0.532
+Operation: 右下に行った
+Reason: 碁盤の目状になっていて、多くの道を検査済みにできそうだったので。
+-------
+Direction: down
+Timestamp(ms): 1737091883567
+WaitTime(s): 2.013
+Operation: 右下に行った
+Reason: 先ほどと同様
+-------
+Direction: right
+Timestamp(ms): 1737091885875
+WaitTime(s): 2.075
+Operation: 7の通路に行った
+Reason: 下に行く通路の中で一番コストが安く済みそうだったから
+-------
+Direction: down
+Timestamp(ms): 1737091886774
+WaitTime(s): 0.666
+Operation: 7の通路に行った
+Reason: 同様
+-------
+Direction: down
+Timestamp(ms): 1737091892057
+WaitTime(s): 5.082
+Operation: 下に行った
+Reason: 右の方に行く際、686の通路よりも555の通路を通る方が安く済みそうだったから
+-------
+Direction: right
+Timestamp(ms): 1737091893530
+WaitTime(s): 1.237
+Operation: 555の通路を通って一番右に行った
+Reason: 右の縦の通路を訪問済みにするため
+-------
+Direction: left
+Timestamp(ms): 1737091896636
+WaitTime(s): 2.203
+Operation: 右の通路に行った
+Reason: 同じ理由
+-------
+Direction: down
+Timestamp(ms): 1737091898712
+WaitTime(s): 0.737
+Operation: 下に行った
+Reason: 一番下の通路を訪問済みにする場合、そのまま下に行った方が良さそうだったため。
+-------
+Direction: up
+Timestamp(ms): 1737091901550
+WaitTime(s): 1.136
+Operation: 左に行った
+Reason: まだ取り切れいていない真ん中の行や一番左の行を取りに行くため
+-------
+Direction: left
+Timestamp(ms): 1737091902387
+WaitTime(s): 0.837
+Operation: 下に戻って左に行った
+Reason: 誤操作で上に行った？
+-------
+Direction: left
+Timestamp(ms): 1737091904758
+WaitTime(s): 2.137
+Operation: 左に行った
+Reason: 未訪問ますを取りに行くため
+-------
+Direction: down
+Timestamp(ms): 1737091908165
+WaitTime(s): 3.205
+Operation: 左の方に行った
+Reason: 同じ理由
+-------
+Direction: down
+Timestamp(ms): 1737091909972
+WaitTime(s): 1.807
+Operation: 下に行った
+Reason: 取り逃した一番下のマスを訪問するため
+-------
+Direction: left
+Timestamp(ms): 1737091912120
+WaitTime(s): 1.243
+Operation: 下を通って一番左に行った
+Reason: 戻るよりも、下を通った方が安く済みそうだったため
+-------
+Direction: up
+Timestamp(ms): 1737091918897
+WaitTime(s): 5.473
+Operation: 左に行ってから上に上がった
+Reason: 戻って上に行くよりも上に上がってから5を通って移動した方がやすそうだったため
+-------
+Direction: down
+Timestamp(ms): 1737689347918
+WaitTime(s): 3.686
+Operation: 下に行った
+Reason: 一本道だったため
+-------

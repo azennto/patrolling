@@ -1,0 +1,98 @@
+Direction: left
+Timestamp(ms): 1737699303933
+WaitTime(s): 13.703
+Coordinates: (4,5)
+Operation: 下に行った
+Reason: 格子状の方に行きたかった
+-------
+Direction: down
+Timestamp(ms): 1737699307371
+WaitTime(s): 3.438
+Coordinates: (4,4)
+Operation: 下に行った
+Reason: 
+-------
+Direction: left
+Timestamp(ms): 1737699310476
+WaitTime(s): 1.167
+Coordinates: (10,4)
+Operation: 左に行ってから下に行った
+Reason: 一番左の行を取れなさそうだったため
+-------
+Direction: down
+Timestamp(ms): 1737699320061
+WaitTime(s): 8.687
+Coordinates: (10,0)
+Operation: 一番下に行った
+Reason: 下を通って上に上がりたかった
+-------
+Direction: right
+Timestamp(ms): 1737699322130
+WaitTime(s): 0.767
+Coordinates: (16,0)
+Operation: 右にまっすぐ移動した
+Reason: 格子状だったのでそのまま取れそうだった
+-------
+Direction: right
+Timestamp(ms): 1737699325202
+WaitTime(s): 2.104
+Coordinates: (16,5)
+Operation: 右にまっすぐ
+Reason: 
+-------
+Direction: right
+Timestamp(ms): 1737699327074
+WaitTime(s): 1.872
+Coordinates: (16,6)
+Operation: 右にまっすぐ
+Reason: 
+-------
+Direction: right
+Timestamp(ms): 1737699327712
+WaitTime(s): 0.638
+Coordinates: (16,7)
+Operation: 右
+Reason: 
+-------
+Direction: right
+Timestamp(ms): 1737699328509
+WaitTime(s): 0.797
+Coordinates: (16,8)
+Operation: 右
+Reason: 
+-------
+Direction: right
+Timestamp(ms): 1737699329915
+WaitTime(s): 1.071
+Coordinates: (16,10)
+Operation: 6から上がる
+Reason: 
+-------
+Direction: up
+Timestamp(ms): 1737699331517
+WaitTime(s): 0.703
+Coordinates: (16,14)
+Operation: 6から上がる
+Reason: 
+-------
+Direction: up
+Timestamp(ms): 1737699333548
+WaitTime(s): 1.666
+Coordinates: (14,14)
+Operation: 上がる
+Reason: 
+-------
+Direction: right
+Timestamp(ms): 1737699335893
+WaitTime(s): 0.705
+Coordinates: (8,12)
+Operation: 一つ左に行ったら戻って6からあがる
+Reason: そちらの方がやすそうだったため
+-------
+Direction: down
+Timestamp(ms): 1737699341899
+WaitTime(s): 3.769
+Coordinates: (2,16)
+Operation: 6の行を取ったら下に下がって5からゴールに
+Reason: 上のルートから行くよりやすそうだったため
+-------

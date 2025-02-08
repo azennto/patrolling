@@ -10,5 +10,4 @@ wheels/
 .venv
 
 # exp data
-exp_data/*
 *.exe
