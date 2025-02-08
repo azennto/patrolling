@@ -1,6 +1,7 @@
 import time
 import math
 import random
+from tqdm import tqdm
 #random.seed(0)
 
 start_time=time.time()
@@ -299,7 +300,7 @@ def insert(temp):
 
     
 SA_start=time.time()
-SA_end=start_time+2.8
+SA_end=start_time+60
 
 T0=40
 T1=0.0001

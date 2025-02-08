@@ -60,7 +60,7 @@ class MazeReplay:
                 raise ValueError("Replay file does not contain a start_time.")
             
             for line in lines:
-                direction, timestamp_ms = line.strip().split()
+                direction, timestamp_ms, *_ = line.strip().split()
                 self.replay_data.append((direction, int(timestamp_ms)))
 
     def mark_explored(self):
@@ -129,7 +129,7 @@ class MazeReplay:
         screen.blit(cost_text, (10, screen_height- 30))  # 画面下に表示
 
     def replay(self):
-        """リプレイを再現"""
+        """リプレイを再現（一時停止機能追加）"""
         screen_width = self.cols * TILE_SIZE
         screen_height = self.rows * TILE_SIZE + 40
         screen = pygame.display.set_mode((screen_width, screen_height))
@@ -137,36 +137,61 @@ class MazeReplay:
 
         clock = pygame.time.Clock()
         running = True
+        paused = False  # 一時停止状態フラグ
 
         # 開始時刻を基準に再現
         for i, (direction, timestamp_ms) in enumerate(self.replay_data):
             if not running:
                 break
-            # 最初の移動か、それ以降の差分で待機時間を計算
+
             previous_timestamp = self.start_time if i == 0 else self.replay_data[i - 1][1]
             wait_time = (timestamp_ms - previous_timestamp) / 1000.0
 
             start_time = time.time()
-            self.move(direction)
 
-            # 描画
-            screen.fill(BLACK)
-            self.draw_maze(screen)
-            self.draw_cost(screen, screen_height)
-            pygame.display.flip()
-
-            # 指定された時間だけ待機
-            while time.time() - start_time < wait_time:
+            # 一時停止ループ
+            while True:
+                # イベント処理
                 for event in pygame.event.get():
                     if event.type == pygame.QUIT:
                         running = False
                         break
+                    if event.type == pygame.KEYDOWN:
+                        if event.key == pygame.K_SPACE:  # スペースキーで一時停止
+                            paused = not paused
+
+                if not running:
+                    break
+
+                # 画面描画
+                screen.fill(BLACK)
+                self.draw_maze(screen)
+                self.draw_cost(screen, screen_height)
+
+                # 一時停止表示
+                if paused:
+                    pause_text = self.font.render("PAUSED", True, RED)
+                    screen.blit(pause_text, (screen_width//2 - 50, screen_height//2 - 20))
+
+                pygame.display.flip()
+
+                # 一時停止中は更新しない
+                if not paused:
+                    # 経過時間チェック
+                    if time.time() - start_time >= wait_time:
+                        break
+
                 clock.tick(30)
+
+            if not running:
+                break
+
+            if not paused:  # 一時停止中は移動しない
+                self.move(direction)
 
         # リプレイ終了
         time.sleep(1)
         pygame.quit()
-
 
 if __name__ == '__main__':
     if len(sys.argv) != 3:
